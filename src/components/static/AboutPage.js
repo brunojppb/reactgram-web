@@ -1,11 +1,12 @@
 import React from "react";
 import aboutSvg from "../../img/about.svg";
+import '../../style/static/main.css';
 
 function AboutPage() {
 
   return (
-    <div style={{padding: '16px'}}>
-      <img src={aboutSvg} alt="about" style={{ width: '100%', maxWidth: '600px' }}/>
+    <div className="static-page-wrapper">
+      <img src={aboutSvg} alt="about" className="static-page-img"/>
       <h1>About Page</h1>
       <p>
         React is the most popular frontend library on the market. Built by

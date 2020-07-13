@@ -1,0 +1,8 @@
+.static-page-wrapper {
+    padding: 16px;
+}
+
+.static-page-img {
+    width: 100%;
+    max-width: 600px;
+}

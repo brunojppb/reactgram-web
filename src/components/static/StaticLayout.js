@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { Footer } from '../common/Footer';
 
-export const StaticLayout = styled.div`
+const StaticLayoutWrapper = styled.div`
     display: grid;
     grid-template-rows: 1fr;
     gap: 16px;
@@ -10,3 +11,14 @@ export const StaticLayout = styled.div`
     max-width: 935px;
     width: 100%;
 `;
+
+export const StaticLayout = ({ children }) => {
+  return(
+    <>
+      <StaticLayoutWrapper>
+        {children}
+      </StaticLayoutWrapper>
+      <Footer/>
+    </>
+  )
+}

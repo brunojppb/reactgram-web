@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Footer } from '../common/Footer';
 
 const StaticLayoutWrapper = styled.div`
     display: grid;
@@ -18,7 +17,6 @@ export const StaticLayout = ({ children }) => {
       <StaticLayoutWrapper>
         {children}
       </StaticLayoutWrapper>
-      <Footer/>
     </>
   )
 }
